@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="游戏暂停"
+        android:textSize="35dp"
+        android:id="@+id/textView" />
+
+    <Button
+        android:id="@+id/contiue"
+        android:layout_width="150dp"
+        android:layout_height="38dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/pause_btn"
+        android:text="继续"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/rule"
+        android:layout_width="150dp"
+        android:layout_height="38dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/pause_btn"
+        android:layout_marginTop="35dp"
+        android:text="游戏规则"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/rule"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:text="重新开始"
+        android:textSize="20dp"
+        android:id="@+id/about"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/pause_btn" />
+
+    <Button
+        android:id="@+id/tuichu"
+        android:layout_width="150dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/rule"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="35dp"
+        android:text="退出"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/pause_btn"/>
+</RelativeLayout>

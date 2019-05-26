@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:background="#00FFFFFF">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="得分:"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="30dp"
+            android:textAppearance="@android:style/TextAppearance" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="等级:"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="30dp"
+            android:layout_marginLeft="55dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生命:"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="30dp"
+            android:layout_marginLeft="55dp"/>
+
+        <Button
+            android:id="@+id/pause_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="20dp"
+            android:layout_marginLeft="125dp"/>
+        <Button
+            android:id="@+id/exit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退出"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/pause_text"
+            android:layout_toEndOf="@+id/pause_text" />
+    </android.support.v7.widget.Toolbar>
+
+    <com.mlj.ship.GameView
+        android:id="@+id/game_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/left_btn"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="38dp"
+        android:background="@drawable/move_left"
+        android:alpha="0.3"/>
+
+    <Button
+        android:id="@+id/right_btn"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignTop="@+id/left_btn"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@+id/left_btn"
+        android:layout_toRightOf="@+id/left_btn"
+        android:background="@drawable/move_right"
+        android:alpha="0.3"/>
+
+    <Button
+        android:id="@+id/shoot_btn"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="22dp"
+        android:alpha="0.3"
+        android:background="@drawable/shoot" />
+</RelativeLayout>

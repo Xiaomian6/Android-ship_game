@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ship</string>
+    <string name="rule">按 ← 控制军舰向左\n按 → 控制军舰向右\n按炸弹键扔炸弹</string>
+</resources>

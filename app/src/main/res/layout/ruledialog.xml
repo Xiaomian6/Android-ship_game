@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="游戏规则"
+        android:textSize="35dp"
+        android:id="@+id/rule_title" />
+    <TextView
+        android:id="@+id/rule_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rule"
+        android:gravity="center"
+        android:layout_below="@+id/rule_title"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="150dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="21dp"
+        android:text="确定"
+        android:textSize="20dp"
+        android:background="@drawable/pause_btn"
+        android:layout_below="@+id/rule_text"
+        android:layout_alignLeft="@+id/rule_title"
+        android:layout_alignStart="@+id/rule_title" />
+</RelativeLayout>
